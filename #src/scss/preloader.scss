@@ -1,0 +1,131 @@
+.sp-container {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 5000;
+	background: $bgcolor;
+	opacity: 1;
+	visibility: visible;
+	transition: all 2s ease;
+	&.done {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.sp-content {
+	position: absolute;
+	left: 80px;
+	top: 50%;
+	z-index: 1000;
+}
+.sp-container > div > div {
+	font-family: $PlayfairN;
+	position: absolute;
+	top: 50%;
+	line-height: 96px;
+	font-size: 80px;
+	width: 100%;
+	text-align: center;
+	color: transparent;
+	animation: blurFadeInOut 3s ease-in backwards;
+}
+.sp-container .frame-1 {
+	animation-delay: 0s;
+}
+.sp-container .frame-2 {
+	animation-delay: 3s;
+}
+.sp-container .frame-3 {
+	animation-delay: 6s;
+}
+.sp-container .frame-4 {
+	animation-delay: 9s;
+}
+.sp-container .frame-5 {
+	animation-delay: 12s;
+}
+.sp-container .frame-6 {
+	animation-delay: 15s;
+}
+.sp-container .frame-7 {
+	animation-delay: 18s;
+}
+.sp-container .frame-8 {
+	animation-delay: 21s;
+}
+.sp-container .frame-9 {
+	animation-delay: 24s;
+}
+.sp-container .frame-10 {
+	animation-delay: 27s;
+}
+
+.sp-globe {
+	position: absolute;
+	width: 282px;
+	height: 273px;
+	left: 50%;
+	top: 50%;
+	margin: -137px 0 0 -141px;
+	animation: fadeInBack 3.6s linear 14s backwards;
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+	transform: scale(5);
+}
+
+/**/
+
+@keyframes blurFadeInOut {
+	0% {
+		opacity: 0;
+		transform: scale(1.3);
+	}
+	20%, 75% {
+		opacity: 1;
+		transform: scale(1);
+		color: #333;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+@keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+		transform: scale(1.3);
+	}
+	50% {
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 0;
+		text-shadow: 0px 0px 1px #fff;
+		transform: scale(1);
+	}
+}
+@keyframes fadeInBack {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	50% {
+		opacity: 0.4;
+		transform: scale(2);
+	}
+	100% {
+		opacity: 0.2;
+		transform: scale(5);
+	}
+}
+
+.preloader_line {
+	position: absolute;
+	bottom: 0;
+	max-width: 100%;
+}

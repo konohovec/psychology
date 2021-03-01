@@ -1,0 +1,67 @@
+.about {
+	margin-bottom: 230px;
+	&__body {
+	}
+	&__title {
+		padding-left: 405px;
+		padding-bottom: 56px;
+		font-family: $PlayfairN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 100px;
+		line-height: 120%;
+		color: $maincolor;
+	}
+	&__education {
+		padding-left: 513px;
+	}
+	&__education_title {
+		padding-bottom: 16px;
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $maincolor;
+	}
+	&__education_items {
+		border-top: 1px solid $maincolor;
+		max-width: 630px;
+	}
+	&__education_item {
+		padding-top: 32px;
+		display: flex;
+	}
+	&__education_univ {
+
+	}
+	&__education_univ-name {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $maincolor;
+		padding-bottom: 16px;
+	}
+	&__education_univ-science {
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 120%;
+		letter-spacing: 0.02em;
+		color: $maincolor;
+	}
+	&__education_year {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $maincolor;
+	}
+}

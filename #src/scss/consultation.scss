@@ -1,0 +1,260 @@
+.consultation {
+	&__body {
+		position: relative;
+	}
+	&__title {
+		z-index: 3;
+		position: absolute;
+		top: 191px;
+		left: 174px;
+		font-family: $PlayfairN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 100px;
+		line-height: 120%;
+		color: $maincolor;
+	}
+	&__main {
+		display: flex;
+	}
+	&__img {
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 50%;
+		img {
+			max-width: 100%;
+			width: 602px;
+			height: 800px;
+		}
+	}
+	&__content {
+		width: 50%;
+	}
+	&__content_hightext {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 160%;
+		color: $maincolor;
+		margin-bottom: 244px;
+		padding-right: 80px;
+	}
+	&__content_process {
+		position: relative;
+		margin-bottom: 24px;
+	}
+	&__content_process_circle {
+	}
+	&__content_process_text {
+		position: absolute;
+		top: 27px;
+		left: 33px;
+		font-family: 'PlayfairItalic';
+		font-style: italic;
+		font-weight: normal;
+		font-size: 70px;
+		line-height: 120%;
+		letter-spacing: 0.02em;
+		color: $maincolor;
+	}
+	&__content_lowtext {
+		display: flex;
+		flex-wrap: wrap;
+		padding-right: 80px;
+	}
+	&__content_lowtext_item {
+		text-align: left;
+		width: 50%;
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 160%;
+		color: $maincolor;
+		padding-right: 20px;
+		padding-bottom: 32px;
+	}
+	&__other {
+		position: relative;
+		padding: 0 80px;
+		margin-top: 131px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__other_info {
+		width: 50%;
+		max-width: 413px;
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $maincolor;
+		span {
+			text-decoration: underline;
+		}
+	}
+	&__other_time {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+	}
+	&__other_time_text {
+		z-index: 101;
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 120%;
+		text-align: right;
+		letter-spacing: 0.02em;
+		color: $maincolor;
+		padding-right: 24px;
+	}
+	&__other_time_circle {
+		z-index: 101;
+		position: relative;
+		width: 88px;
+		height: 88px;
+		background-color: $plus;
+		border-radius: 60px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+.circle_line {
+	max-width: 100%;
+}
+.vertical{
+	position: absolute;
+	top: 29px;
+	left: 43px;
+	width: 1px;
+	height: 31px;
+	background: $maincolor;
+	transition: all .5s ease;
+	&.open {
+		transform: rotate(45deg);
+	}
+}
+.horizont {
+	position: absolute;
+	left: 43px;
+	top: 29px;
+	width: 1px;
+	height: 31px;
+	background: $maincolor;
+	transform: rotate(-90deg);
+	transition: all .5s ease;
+	&.open {
+		transform: rotate(-45deg);
+	}
+}
+
+.popup {
+	opacity: 0;
+	z-index: 100;
+	position: absolute;
+	bottom: 0;
+	right: 80px;
+	&.open {
+		opacity: 1;
+	}
+	&__body {
+	}
+	&__content {
+		display: flex;
+		background-color: $plus;
+		width: 1172px;
+		height: 589px;
+	}
+	&__text {
+		width: 51%;
+		padding-left: 88px;
+		padding-top: 88px;
+	}
+	&__text_time {
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 120%;
+		letter-spacing: 0.02em;
+		color: $maincolor;
+		margin-bottom: 8px;
+	}
+	&__text_online {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $maincolor;
+		margin-bottom: 56px;
+	}
+	&__text_price {
+		display: flex;
+	}
+	&__text_price_title {
+
+	}
+	&__text_price_title1 {
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 120%;
+		letter-spacing: 0.02em;
+		color: $maincolor;
+		margin-bottom: 8px;
+	}
+	&__text_price_title2 {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $maincolor;
+	}
+	&__text_price_text {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 160%;
+		color: $maincolor;
+		margin-bottom: 48px;
+		padding-left: 40px;
+	}
+	&__text_consultation {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text_consultation_text {
+		width: 59%;
+		font-family: Playfair Display;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 120%;
+		letter-spacing: 0.02em;
+		color: $maincolor;
+	}
+	&__img {
+		padding-top: 77px;
+		padding-left: 20px;
+		width: 49%;
+		img {
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,270 @@
+.callbackmodal {
+	&.show_modal {
+		opacity: 1;
+		visibility: visible;
+	}
+	transition: all .5s ease;
+	opacity: 0;
+	visibility: hidden; 
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: $bgtopic;
+	&__body {
+		min-height: 100%;
+		padding: 64px 80px;
+	}
+	&__content {
+	}
+	&__close {
+		cursor: pointer;
+		margin-bottom: 30px;
+		position: relative;
+		text-align: right;
+		top: 0;
+		left: 1192px;
+		width: 88px;
+		height: 88px;
+		background-color: $bgtopic;
+		border: 1px solid $bgcolor;
+		border-radius: 60px;
+		&:hover {
+			border: 1px solid $placeholder;
+			a {
+				span {
+					&:hover {
+						&:before {
+							background-color: $placeholder;
+						}
+						&:after {
+							background-color: $placeholder;
+						}
+					}
+				}
+			}
+		}
+		a {
+			span {
+				position: absolute;
+				top: 0;
+				left: 0;
+				&:after {
+					position: absolute;
+					top: 28.5px;
+					left: 43.5px;
+					content: '';
+					width: 1px;
+					height: 31px;
+					background-color: $bgcolor;
+					transform: rotate(-45deg);
+				}
+				&:before {
+					position: absolute;
+					top: 28.5px;
+					left: 43.5px;
+					content: '';
+					width: 1px;
+					height: 31px;
+					background-color: $bgcolor;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 88px;
+	}
+	&__title_text {
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 100px;
+		line-height: 120%;
+		color: $bgcolor;
+	}
+	&__social {
+		position: absolute;
+		right: 80px;
+		margin-top: 180px;
+	}
+	&__list {
+		text-align: right;
+		li {
+			margin-bottom: 16px;
+		}
+	}
+	&__link {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 160%;
+		color: $bgcolor;
+		&:focus {
+			color: $pressed;
+		}
+		&:hover {
+			color: $placeholder;
+		}
+	}
+	&__form {
+		width: 847px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__form_item {
+		max-width: 25%;
+		min-width: 413px;
+		padding-right: 21px;
+		&:nth-child(1) {
+			margin-bottom: 56px;
+		}
+		&:nth-child(2) {
+			margin-bottom: 56px;
+		}
+		&:nth-child(3) {
+			margin-bottom: 26px;
+		}
+		&:nth-child(4){
+			position: relative;
+			margin-bottom: 26px;
+		}
+	}
+	&__email {
+		color: $bgcolor;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid $input;
+		background: transparent;
+		padding-bottom: 16px;
+		&::placeholder {
+			font-family: $Helvetica;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 160%;
+			color: $placeholder;
+		}
+		&.send {
+			display: none;
+		}
+		&:focus {
+			border-bottom: 1px solid $placeholder;
+		}
+	}
+	&__name {
+		color: $bgcolor;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid $input;
+		background: transparent;
+		padding-bottom: 16px;
+		&::placeholder {
+			font-family: $Helvetica;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 160%;
+			color: $placeholder;
+		}
+		&.send {
+			display: none;
+		}
+		&:focus {
+			border-bottom: 1px solid $placeholder;
+		}
+	}
+	&__message {
+		color: $bgcolor;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid $input;
+		background: transparent;
+		padding-bottom: 87px;
+		&::placeholder {
+			font-family: $Helvetica;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 160%;
+			color: $placeholder;
+		}
+		&.send {
+			display: none;
+		}
+		&:focus {
+			border-bottom: 1px solid $placeholder;
+		}
+	}
+	&__btn {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: $bgcolor;
+		background-color: transparent;
+		&:hover {
+			color: $placeholder;
+		}
+		&.send {
+			display: none;
+		}
+}
+	&__other {
+		position: absolute;
+		bottom: 70px;
+		right: 80px;
+		text-align: right;
+	}
+	&__other_email {
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $bgcolor;
+	}
+	&__other_number {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $bgcolor;
+	}
+}
+
+.line_callback {
+	z-index: 1000;
+	position: absolute;
+	bottom: -150px;
+	right: -124px;
+	max-width: 100%;
+}
+
+
+.callbackmodal__form_item_send {
+	display: none;
+	font-family: $Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: $bgcolor;
+	&.send {
+		display: block;
+	}
+}

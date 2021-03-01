@@ -1,0 +1,123 @@
+.callback {
+	margin-top: 1430px;
+	background: $bgtopic;
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 164px;
+	}
+	&__title {
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 100px;
+		line-height: 120%;
+		color: $bgcolor;
+		padding-bottom: 24px;
+		padding-left: 102px;
+	}
+	&__email {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 50px;
+		line-height: 120%;
+		text-align: right;
+		text-transform: uppercase;
+		color: $bgcolor;
+		padding-bottom: 12px;
+		padding-left: 410px;
+	}
+	&__connection {
+		display: flex;
+		align-items: center;
+		padding-left: 111px;
+	}
+	&__connection_number {
+		position: relative;
+		margin-right: 40px;
+	}
+	&__connection_number_img {
+	}
+	&__connection_number_number {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $bgcolor;
+		position: absolute;
+		top: 48px;
+		left: 26px;
+	}
+	&__connection_social {
+	}
+	&__connection_social_list {
+		display: flex;
+	}
+	&__connection_social_link {
+		margin: 0 16px;
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 160%;
+		color: $bgcolor;
+		&:active {
+			color: $pressed;
+		}
+		&:hover {
+			color: $placeholder;
+		}
+	}
+	&__other {
+		padding: 0 80px 35px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 315px;
+	}
+	&__other_callback {
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: $bgcolor;
+		&:hover {
+			cursor: pointer;
+			color: $placeholder;
+		}
+	}
+	&__other_design {
+		display: flex;
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 160%;
+		color: $bgcolor;
+	}
+	&__other_design_out {
+		padding: 0 32px;
+		a {
+			font-family: $Helvetica;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 120%;
+			color: $bgcolor;
+		}
+	}
+	&__other_design_copy {
+		padding: 0 32px;
+		&:last-child {
+			padding: 0;
+		}
+	}
+}

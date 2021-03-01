@@ -1,0 +1,73 @@
+.psycho {
+	&__body {
+		position: relative;
+	}
+	&__title {
+		z-index: 5;
+		position: absolute;
+		top: 308px;
+		left: 513px;
+		font-family: $PlayfairN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 100px;
+		line-height: 120%;
+		color: $maincolor;
+	}
+	&__img_f {
+		z-index: 3;
+		position: absolute;
+		top: 242px;
+		left: 186px;
+		img {
+			max-width: 100%;
+			width: 434.09px;
+		}
+	}
+	&__img_s {
+		z-index: 3;
+		position: absolute;
+		top: 600px;
+		left: 110px;
+		img {
+			max-width: 100%;
+			width: 220.51px;
+		}
+	}
+	&__text {
+		width: 412px;
+		position: absolute;
+		top: 548px;
+		left: 731px;
+		font-family: $Helvetica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 160%;
+		color: $maincolor;
+		padding-bottom: 24px;
+		p {
+			padding-bottom: 24px;
+		}
+	}
+	&__quote {
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 70px;
+		line-height: 120%;
+		letter-spacing: 0.02em;
+		color: $maincolor;
+	}
+	&__quote_high {
+		position: absolute;
+		top: 1018px;
+		left: 188px;
+	}
+	&__quote_low {
+		padding-bottom: 230px;
+		position: absolute;
+		top: 1116px;
+		left: 297px;
+	}
+}

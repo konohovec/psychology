@@ -1,0 +1,33 @@
+.topics {
+	&__body {
+		background: $bgcolor;
+		padding: 180px 300px;
+		text-align: center;
+		transition: all 3s ease;
+		&.another_bg {
+			background: $bgtopic;
+		}
+	}
+	&__title {
+		font-family: $Helvetica ;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $bgcolor;
+		margin-bottom: 64px;
+	}
+	&__topic {
+	}
+	&__topic_item {
+		font-family: $Playfair;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 70px;
+		line-height: 120%;
+		letter-spacing: 0.02em;
+		color: $bgcolor;
+		margin-bottom: 64px;
+	}
+}

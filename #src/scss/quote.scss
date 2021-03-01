@@ -1,0 +1,28 @@
+.quote {
+	&__body {
+		min-height: 868px;
+		position: relative;
+		font-family: $Helvetica ;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: $maincolor;
+	}
+	&__text_high {
+		position: absolute;
+		top: 332px;
+		left: 513px;
+	}
+	&__text {
+		position: absolute;
+		top: 388px;
+		left: 405px;
+	}
+}
+.marks {
+	max-width: 100%;
+	position: absolute;
+	top: 230px;
+}

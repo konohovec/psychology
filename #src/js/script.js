@@ -1,0 +1,9 @@
+@@include('webp.js');
+@@include('svg_animation.js');
+@@include('burger.js');
+@@include('menu.js');
+@@include('popup.js');
+@@include('popup_callback.js');
+@@include('animate.js');
+@@include('preloader.js');
+@@include('change_bg.js');
