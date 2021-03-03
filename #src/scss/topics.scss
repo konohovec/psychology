@@ -4,6 +4,22 @@
 		padding: 180px 300px;
 		text-align: center;
 		transition: all 3s ease;
+		@media (max-width: 1280px) {
+			padding: 180px 218px;
+		}
+		@media (max-width: 1024px) {
+			padding: 180px 190px;
+			min-width: 1143px;
+		}
+		@media (max-width: 768px) {
+			padding: 130px 40px;
+			max-width: 768px;
+			min-width: auto;	
+		}
+		@media (max-width: 320px) {
+			padding: 40px 20px;
+			max-width: 320px;
+		}
 		&.another_bg {
 			background: $bgtopic;
 		}
@@ -17,6 +33,16 @@
 		text-transform: uppercase;
 		color: $bgcolor;
 		margin-bottom: 64px;
+		@media (max-width: 1024px) {
+			font-size: 24px;
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 56px;	
+		}
+		@media (max-width: 320px) {
+			font-size: 16px;
+			margin-bottom: 24px;
+		}
 	}
 	&__topic {
 	}
@@ -29,5 +55,17 @@
 		letter-spacing: 0.02em;
 		color: $bgcolor;
 		margin-bottom: 64px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		@media (max-width: 1024px) {
+			font-size: 65px;
+		}
+		@media (max-width: 768px) {
+			font-size: 55px;
+		}
+		@media (max-width: 320px) {
+			font-size: 30px;
+		}
 	}
 }

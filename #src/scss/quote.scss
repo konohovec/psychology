@@ -9,20 +9,101 @@
 		line-height: 160%;
 		text-transform: uppercase;
 		color: $maincolor;
+		@media (max-width: 1024px) {
+			font-size: 24px;	
+		}
+		@media (max-width: 768px) {
+			min-height: 540px;
+		}
+		@media (max-width: 320px) {
+			font-size: 16px;	
+			min-height: 371px;
+		}
 	}
 	&__text_high {
 		position: absolute;
 		top: 332px;
 		left: 513px;
+		@media (max-width: 1280px) {
+			top: 328px;
+			left: 473px;	
+		}
+		@media (max-width: 1024px) {
+			top: 372px;
+			left: 409px;
+		}
+		@media (max-width: 768px) {
+			top: 208px;
+			left: 185px;	
+		}
+		@media (max-width: 320px) {
+			top: 109px;
+			left: 95px;
+			width: 205px;
+		}
 	}
 	&__text {
 		position: absolute;
 		top: 388px;
 		left: 405px;
+		width: 847px;
+
+		@media (max-width: 1280px) {
+			top: 384px;
+			left: 365px;
+					}
+		@media (max-width: 1024px) {
+			top: 410px;
+			left: 301px;
+			width: 643px;
+		}
+		@media (max-width: 768px) {
+			top: 246px;
+			left: 129px;	
+			width: 520px;
+		}
+		@media (max-width: 320px) {
+			top: 160px;
+			left: 95px;	
+			width: 205px;
+		}
 	}
 }
 .marks {
 	max-width: 100%;
 	position: absolute;
 	top: 230px;
+	@media (max-width: 1280px) {
+		left: -75px;
+	}
+	@media (max-width: 1024px) {
+		left: -38px;
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.small_marks {
+	max-width: 100%;
+	position: absolute;
+	display: none;
+	@media (max-width: 768px) {
+		display: block;
+		top: 180px;
+		left: -62px;
+	}
+	@media (max-width: 320px) {
+		display: none;	
+	}
+}
+.quotes {
+	max-width: 100%;
+	position: absolute;
+	display: none;
+	@media (max-width: 320px) {
+		display: block;
+		top: 80px;
+		left: -9px;
+	}
 }

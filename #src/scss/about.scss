@@ -1,5 +1,11 @@
 .about {
 	margin-bottom: 230px;
+	@media (max-width: 768px) {
+		margin-bottom: 180px;
+	}
+	@media (max-width: 320px) {
+		margin-bottom: 78px;	
+	}
 	&__body {
 	}
 	&__title {
@@ -11,9 +17,31 @@
 		font-size: 100px;
 		line-height: 120%;
 		color: $maincolor;
+		@media (max-width: 1024px) {
+			padding: 141px 0 56px 191px;
+		}
+		@media (max-width: 768px) {
+			padding: 161px 0 40px 40px;
+		}
+		@media (max-width: 320px) {
+			font-size: 40px;
+			padding: 95px 0 24px 20px;
+		}
 	}
 	&__education {
 		padding-left: 513px;
+		@media (max-width: 1280px) {
+			padding-left: 460px;
+		}
+		@media (max-width: 1024px) {
+			padding-left: 301px;
+		}
+		@media (max-width: 768px) {
+			padding-left: 129px;
+		}
+		@media (max-width: 320px) {
+			padding-left: 20px;
+		}
 	}
 	&__education_title {
 		padding-bottom: 16px;
@@ -24,17 +52,39 @@
 		line-height: 160%;
 		text-transform: uppercase;
 		color: $maincolor;
+		@media (max-width: 320px) {
+			font-size: 20px;
+		}
 	}
 	&__education_items {
 		border-top: 1px solid $maincolor;
 		max-width: 630px;
+		@media (max-width: 1024px) {
+			max-width: 100%;
+		}
+		@media (max-width: 768px) {
+			max-width: 600px;
+		}
+		@media (max-width: 320px) {
+			max-width: 280px;
+		}
 	}
 	&__education_item {
 		padding-top: 32px;
 		display: flex;
+		@media (max-width: 320px) {
+			flex-direction: column;
+			padding-top: 24px;
+		}
 	}
 	&__education_univ {
-
+		@media (max-width: 1024px) {
+			padding-right: 70px;
+		}
+		@media (max-width: 320px) {
+			order: 2;
+			padding-right: 0;
+		}
 	}
 	&__education_univ-name {
 		font-family: $Helvetica;
@@ -45,6 +95,18 @@
 		text-transform: uppercase;
 		color: $maincolor;
 		padding-bottom: 16px;
+		@media (max-width: 1024px) {
+			padding-right: 70px;
+		}
+		@media (max-width: 768px) {
+			padding-right: 0;
+			font-size: 23.5px;
+		}
+		@media (max-width: 320px) {
+			font-size: 16px;
+			padding-bottom: 8px;
+			padding-right: 0;
+		}
 	}
 	&__education_univ-science {
 		font-family: $Playfair;
@@ -54,6 +116,15 @@
 		line-height: 120%;
 		letter-spacing: 0.02em;
 		color: $maincolor;
+		@media (max-width: 1024px) {
+			padding-right: 70px;
+		}
+		@media (max-width: 768px) {
+			padding-right: 0;
+		}
+		@media (max-width: 320px) {
+			font-size: 18px;
+		}
 	}
 	&__education_year {
 		font-family: $Helvetica;
@@ -63,5 +134,9 @@
 		line-height: 160%;
 		text-transform: uppercase;
 		color: $maincolor;
+		@media (max-width: 320px) {
+			order: 1;
+			padding-bottom: 8px;
+		}
 	}
 }

@@ -1,7 +1,11 @@
 .callbackmodal {
+	overflow: auto;
 	&.show_modal {
 		opacity: 1;
 		visibility: visible;
+	}
+	@media (min-width: 1024px) and (max-width: 1440px) {
+		overflow: hidden;
 	}
 	transition: all .5s ease;
 	opacity: 0;
@@ -16,6 +20,15 @@
 	&__body {
 		min-height: 100%;
 		padding: 64px 80px;
+		@media (max-width: 1280px) {
+			padding: 0 80px 64px 80px;	
+		}
+		@media (max-width: 768px) {
+			padding: 0 40px 64px 40px;		
+		}
+		@media (max-width: 320px) {
+			padding: 0 20px 24px 20px;
+		}
 	}
 	&__content {
 	}
@@ -31,6 +44,24 @@
 		background-color: $bgtopic;
 		border: 1px solid $bgcolor;
 		border-radius: 60px;
+		@media (max-width: 1280px) {
+			left: 1015px;	
+			top: 35px;
+		}
+		@media (max-width: 1024px) {
+			top: 80px;
+			left: 856px;
+		}
+		@media (max-width: 768px) {
+			left: 610px;
+			top: 40px;
+		}
+		@media (max-width: 320px) {
+			top: 20px;
+			left: 235px;
+			width: 55px;
+			height: 55px;		
+		}
 		&:hover {
 			border: 1px solid $placeholder;
 			a {
@@ -60,6 +91,12 @@
 					height: 31px;
 					background-color: $bgcolor;
 					transform: rotate(-45deg);
+					@media (max-width: 320px) {
+						width: 0.6px;
+						height: 19px;
+						top: 18px;
+						left: 26px;
+					}
 				}
 				&:before {
 					position: absolute;
@@ -70,6 +107,12 @@
 					height: 31px;
 					background-color: $bgcolor;
 					transform: rotate(45deg);
+					@media (max-width: 320px) {
+						width: 0.6px;
+						height: 19px;
+						top: 18px;
+						left: 26px;
+					}
 				}
 			}
 		}
@@ -78,6 +121,15 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 88px;
+		position: relative;
+		top: 0;
+		left: 0;
+		@media (max-width: 768px) {
+			margin-bottom: 72px;		
+		}
+		@media (max-width: 320px) {
+			margin-bottom: 24px;		
+		}
 	}
 	&__title_text {
 		font-family: $Playfair;
@@ -86,17 +138,69 @@
 		font-size: 100px;
 		line-height: 120%;
 		color: $bgcolor;
+		@media (max-width: 1280px) {
+			font-size: 70px;	
+		}
+		@media (max-width: 768px) {
+			font-size: 55px;		
+		}
+		@media (max-width: 320px) {
+			font-size: 30px;		
+		}
+
 	}
 	&__social {
 		position: absolute;
 		right: 80px;
 		margin-top: 180px;
+		@media (max-width: 1280px) {
+			margin-top: 150px;	
+			right: 0;
+		}
+		@media (max-width: 1024px) {
+			top: 157px;
+			left: 496px;
+		}
+		@media (max-width: 768px) {
+			top: 70px;		
+		}
+		@media (max-width: 320px) {
+			top: 461px;
+			left: 0;
+			bottom: 24px;
+			margin-top: 0;
+		}
 	}
 	&__list {
 		text-align: right;
+		@media (max-width: 320px) {
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
 		li {
 			margin-bottom: 16px;
+			@media (max-width: 768px) {
+				margin-bottom: 24px;	
+			}
+			@media (max-width: 320px) {
+				padding-right: 12px;
+				&:nth-child(6) {
+					order: 4;
+				}
+				&:nth-child(4) {
+					order: 5;
+					justify-self: center;
+				}
+				&:nth-child(5) {
+					order: 6;
+					justify-self: center;
+				}
+			}
 		}
+		
 	}
 	&__link {
 		font-family: $Helvetica;
@@ -113,9 +217,13 @@
 		}
 	}
 	&__form {
+		position: relative;
 		width: 847px;
 		display: flex;
 		flex-wrap: wrap;
+		@media (max-width: 1024px) {
+			flex-direction: column;
+		}
 	}
 	&__form_item {
 		max-width: 25%;
@@ -133,6 +241,38 @@
 		&:nth-child(4){
 			position: relative;
 			margin-bottom: 26px;
+		}
+		@media (max-width: 1024px) {
+			&:nth-child(1) {
+				margin-bottom: 80px;
+			}
+			&:nth-child(2) {
+				margin-bottom: 80px;
+			}
+			&:nth-child(3) {
+				margin-bottom: 48px;
+			}
+			&:nth-child(4){
+				position: relative;
+				margin-bottom: 26px;
+			}
+		}
+		@media (max-width: 320px) {
+			min-width: 280px;	
+			margin-right: 0;
+			&:nth-child(1) {
+				margin-bottom: 28px;
+			}
+			&:nth-child(2) {
+				margin-bottom: 28px;
+			}
+			&:nth-child(3) {
+				margin-bottom: 28px;
+			}
+			&:nth-child(4){
+				position: relative;
+				margin-bottom: 28px;
+			}
 		}
 	}
 	&__email {
@@ -156,6 +296,12 @@
 		&:focus {
 			border-bottom: 1px solid $placeholder;
 		}
+		@media (max-width: 1024px) {
+			min-width: 533px;
+		}
+		@media (max-width: 320px) {
+			min-width: 280px;
+		}
 	}
 	&__name {
 		color: $bgcolor;
@@ -177,6 +323,12 @@
 		}
 		&:focus {
 			border-bottom: 1px solid $placeholder;
+		}
+		@media (max-width: 1024px) {
+			min-width: 533px;
+		}
+		@media (max-width: 320px) {
+			min-width: 280px;
 		}
 	}
 	&__message {
@@ -200,6 +352,12 @@
 		&:focus {
 			border-bottom: 1px solid $placeholder;
 		}
+		@media (max-width: 1024px) {
+			min-width: 533px;
+		}
+		@media (max-width: 320px) {
+			min-width: 280px;
+		}
 	}
 	&__btn {
 		position: absolute;
@@ -219,12 +377,34 @@
 		&.send {
 			display: none;
 		}
+		@media (max-width: 1024px) {
+			right: -121px;
+			left: auto;
+		}
+		@media (max-width: 320px) {
+			right: 0;
+			left: auto;
+			top: -10px;
+		}
 }
 	&__other {
 		position: absolute;
 		bottom: 70px;
 		right: 80px;
 		text-align: right;
+		@media (max-width: 1024px) {
+			right: 200px;
+			bottom: 67px;
+		}
+		@media (max-width: 768px) {
+			right: 60px;	
+		}
+		@media (max-width: 320px) {
+			bottom: 50px;
+			right: 0;
+			left: 0;
+			text-align: center;
+		}
 	}
 	&__other_email {
 		font-family: Helvetica Neue;
@@ -234,6 +414,13 @@
 		line-height: 160%;
 		text-transform: uppercase;
 		color: $bgcolor;
+		@media (max-width: 1280px) {
+			font-size: 24px;	
+		}
+		@media (max-width: 320px) {
+			font-size: 16px;
+			padding-bottom: 8px;
+		}
 	}
 	&__other_number {
 		font-family: $Helvetica;
@@ -243,6 +430,12 @@
 		line-height: 160%;
 		text-transform: uppercase;
 		color: $bgcolor;
+		@media (max-width: 1280px) {
+			font-size: 24px;	
+		}
+		@media (max-width: 320px) {
+			font-size: 16px;
+		}
 	}
 }
 
@@ -252,10 +445,20 @@
 	bottom: -150px;
 	right: -124px;
 	max-width: 100%;
+	@media (max-width: 1024px) {
+		right: 0;
+	}
+	@media (max-width: 768px) {
+		right: -130px;	
+	}
+	@media (max-width: 320px) {
+		display: none;
+	}
 }
 
 
 .callbackmodal__form_item_send {
+	position: absolute;
 	display: none;
 	font-family: $Helvetica;
 	font-style: normal;
@@ -266,5 +469,8 @@
 	color: $bgcolor;
 	&.send {
 		display: block;
+	}
+	@media (max-width: 320px) {
+		width: 280px;
 	}
 }

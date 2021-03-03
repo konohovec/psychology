@@ -13,4 +13,4 @@ $(window).scroll(function() {
 		$('.header__title_name_small').removeClass('hidden');
 		$('.header__nav_burger').removeClass('show');
 	}
-})
+});

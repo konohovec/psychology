@@ -7,3 +7,5 @@
 @@include('animate.js');
 @@include('preloader.js');
 @@include('change_bg.js');
+@@include('photo_animate.js');
+@@include('burger_menu.js');

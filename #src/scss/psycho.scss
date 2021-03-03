@@ -13,6 +13,23 @@
 		font-size: 100px;
 		line-height: 120%;
 		color: $maincolor;
+		@media (max-width: 1280px) {
+			left: 447px;	
+		}
+		@media (max-width: 1024px) {
+			top: 278px;
+			left: 165px;
+		}
+		@media (max-width: 768px) {
+			font-size: 80px;
+			top: 238px;		
+			left: 116px;
+		}
+		@media (max-width: 320px) {
+			font-size: 35px;
+			top: 403px;
+			left: 20px;
+		}
 	}
 	&__img_f {
 		z-index: 3;
@@ -22,6 +39,27 @@
 		img {
 			max-width: 100%;
 			width: 434.09px;
+			@media (max-width: 1024px) {
+				width: 353px;
+			}
+			@media (max-width: 320px) {
+				width: 191px;
+			}
+		}
+		@media (max-width: 1280px) {
+			left: 182px;	
+			top: 230px;
+		}
+		@media (max-width: 1024px) {
+			left: -103px;
+		}
+		@media (max-width: 768px) {
+			top: 180px;
+			left: -90px;		
+		}
+		@media (max-width: 320px) {
+			top: 80px;
+			left: 17px;
 		}
 	}
 	&__img_s {
@@ -32,6 +70,27 @@
 		img {
 			max-width: 100%;
 			width: 220.51px;
+			@media (max-width: 1024px) {
+				width: 214px;
+			}
+			@media (max-width: 320px) {
+				width: 118px;
+			}
+		}
+		@media (max-width: 1280px) {
+			left: 90px;
+			top: 590px;
+		}
+		@media (max-width: 1024px) {
+			top: 546px;
+			left: 85px;
+		}
+		@media (max-width: 768px) {
+			left: -36px;		
+		}
+		@media (max-width: 320px) {
+			top: 221px;
+			left: 170px;
 		}
 	}
 	&__text {
@@ -49,6 +108,21 @@
 		p {
 			padding-bottom: 24px;
 		}
+		@media (max-width: 1024px) {
+			top: 502px;
+			left: 435px;
+		}
+		@media (max-width: 768px) {
+			top: 433px;
+			left: 394px;
+			width: 333px;
+			font-size: 14px;
+		}
+		@media (max-width: 320px) {
+			top: 469px;
+			left: 20px;
+			width: 281px;
+		}
 	}
 	&__quote {
 		font-family: $Playfair;
@@ -58,16 +132,46 @@
 		line-height: 120%;
 		letter-spacing: 0.02em;
 		color: $maincolor;
+		@media (max-width: 768px) {
+			font-size: 55px;		
+		}
+		@media (max-width: 320px) {
+			font-size: 30px;
+		}
 	}
 	&__quote_high {
 		position: absolute;
 		top: 1018px;
 		left: 188px;
+		@media (max-width: 1024px) {
+			top: 990px;
+		}
+		@media (max-width: 768px) {
+			top: 987px;
+			left: 47px;		
+		}
+		@media (max-width: 320px) {
+			top: 900px;
+			left: 20px;
+		}
 	}
 	&__quote_low {
 		padding-bottom: 230px;
 		position: absolute;
 		top: 1116px;
 		left: 297px;
+		@media (max-width: 1024px) {
+			top: 1068px;
+		}
+		@media (max-width: 768px) {
+			top: 1053px;
+			left: 136px;
+			padding-bottom: 130px;		
+		}
+		@media (max-width: 320px) {
+			top: 930px;
+			left: 20px;
+			padding-bottom: 80px;
+		}
 	}
 }

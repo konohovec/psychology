@@ -13,12 +13,19 @@
 		opacity: 0;
 		visibility: hidden;
 	}
+	@media (max-width: 320px) {
+		height: 624px;
+	}
 }
 .sp-content {
 	position: absolute;
 	left: 80px;
 	top: 50%;
 	z-index: 1000;
+	@media (max-width: 320px) {
+		top: 40%;
+		left: 20px;
+	}
 }
 .sp-container > div > div {
 	font-family: $PlayfairN;
@@ -30,6 +37,9 @@
 	text-align: center;
 	color: transparent;
 	animation: blurFadeInOut 3s ease-in backwards;
+	@media (max-width: 320px) {
+		font-size: 35px;
+	}
 }
 .sp-container .frame-1 {
 	animation-delay: 0s;
@@ -128,4 +138,7 @@
 	position: absolute;
 	bottom: 0;
 	max-width: 100%;
+	@media (max-width: 320px) {
+		display: none;
+	}
 }
