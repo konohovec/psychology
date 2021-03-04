@@ -346,6 +346,9 @@
 		left: -722px;
 		max-width: 1045px;
 	}
+	@media (min-width: 1440px) and (max-width: 2560px) {
+		left: 20%;
+	}
 }
 
 /***********БУРГЕР ОТ 768РХ***********/
