@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
 	$('.header__nav_burger').click(function(event) {
-		$('.top_line, .bottom_line, .header__list').toggleClass('active');
+		$('.top_line, .bottom_line, .header__list, .header__menu').toggleClass('active');
 	});
 	$('.span').click(function(event) {
-		$('.top_line, .bottom_line, .header__list').toggleClass('active');
+		$('.top_line, .bottom_line, .header__list, .header__menu').toggleClass('active');
 	});
 });
 $(window).scroll(function() {
